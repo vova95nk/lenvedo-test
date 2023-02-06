@@ -1,0 +1,16 @@
+{
+    "name": "lenvendo/test",
+    "autoload": {
+        "classmap": ["Core", "vendor"],
+        "psr-4": {
+            "Lenvendo\\": "/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladimir Nikolaenko"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
