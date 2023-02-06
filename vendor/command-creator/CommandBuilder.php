@@ -80,7 +80,7 @@ class CommandBuilder
                 $option = explode('=', $option);
 
                 if (count($option) === 2) {
-                    $result[$option[0]] = $option[1];
+                    $result[$option[0]][] = $option[1];
                 }
             }
         }

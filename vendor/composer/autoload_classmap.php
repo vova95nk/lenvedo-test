@@ -15,6 +15,7 @@ return array(
     'Filesystem\\Interfaces\\BuilderInterface' => $baseDir . '/Core/Filesystem/Interfaces/BuilderInterface.php',
     'Filesystem\\Interfaces\\SaverInterface' => $baseDir . '/Core/Filesystem/Interfaces/SaverInterface.php',
     'Filesystem\\SaverAbstract' => $baseDir . '/Core/Filesystem/SaverAbstract.php',
+    'Lenvendo\\Console\\ConsoleWriter' => $baseDir . '/Core/Console/ConsoleWriter.php',
     'Lenvendo\\Filesystem\\CommandReader' => $baseDir . '/Core/Filesystem/CommandReader.php',
     'Lenvendo\\Filesystem\\CommandSaver' => $baseDir . '/Core/Filesystem/CommandSaver.php',
 );

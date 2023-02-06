@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Lenvendo\Filesystem;
 
+use Lenvendo\Console\ConsoleWriter;
+
 class CommandReader
 {
     public const MAIN_DIR = './storage/commands';
@@ -37,9 +39,7 @@ class CommandReader
                 exit(1);
             }
 
-            print_r([
-                $cmdData['name'] => $cmdData
-            ]);
+            $this->renderResult($cmdData);
         } else {
             var_dump('Запрашиваемая команда - не найдена');
         }
@@ -54,9 +54,13 @@ class CommandReader
             $rawCmd = file_get_contents($path);
             $cmdData = unserialize($rawCmd);
 
-            print_r([
-                $cmdData['name'] => $cmdData
-            ]);
+            $this->renderResult($cmdData);
         }
+    }
+
+    private function renderResult(array $data): void
+    {
+        $reader = new ConsoleWriter($data);
+        $reader->write();
     }
 }

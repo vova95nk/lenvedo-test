@@ -30,6 +30,7 @@ class ComposerStaticInitbd8984f30922d809712a26c73b687fa4
         'Filesystem\\Interfaces\\BuilderInterface' => __DIR__ . '/../..' . '/Core/Filesystem/Interfaces/BuilderInterface.php',
         'Filesystem\\Interfaces\\SaverInterface' => __DIR__ . '/../..' . '/Core/Filesystem/Interfaces/SaverInterface.php',
         'Filesystem\\SaverAbstract' => __DIR__ . '/../..' . '/Core/Filesystem/SaverAbstract.php',
+        'Lenvendo\\Console\\ConsoleWriter' => __DIR__ . '/../..' . '/Core/Console/ConsoleWriter.php',
         'Lenvendo\\Filesystem\\CommandReader' => __DIR__ . '/../..' . '/Core/Filesystem/CommandReader.php',
         'Lenvendo\\Filesystem\\CommandSaver' => __DIR__ . '/../..' . '/Core/Filesystem/CommandSaver.php',
     );

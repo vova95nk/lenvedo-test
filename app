@@ -2,11 +2,12 @@
 
 <?php
 
-require __DIR__.'/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 use Creator\CommandBuilder;
 use Lenvendo\Filesystem\CommandSaver;
 use Lenvendo\Filesystem\CommandReader;
+use Lenvendo\Console\ConsoleWriter;
 
 unset($argv[0]);
 
